@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
+import { Space_Grotesk } from "next/font/google"
 import "./globals.css"
 
-const geistSans = Geist({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 })
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' >
-      <body className={`${geistSans.className} antialiased pt-[60px] px-[100px] not-md:px-[15px] not-md:pt-0`} >{children}</body>
+      <body className={`${spaceGrotesk.className} antialiased pt-[60px] px-[100px] not-md:px-[15px] not-md:pt-0`} >{children}</body>
     </html>
   )
 }
