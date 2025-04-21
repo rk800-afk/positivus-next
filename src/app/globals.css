@@ -123,3 +123,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 100%;
+}
+
+h2 {
+  line-height: 100%;
+  font-weight: 500;
+  font-size: 40px;
+}
