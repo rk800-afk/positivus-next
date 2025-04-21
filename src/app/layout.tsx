@@ -21,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${spaceGrotesk.className} antialiased pt-[60px] px-[100px] not-md:px-[15px] not-md:pt-0`}
+        className={`${spaceGrotesk.className} antialiased pt-[60px] px-[100px] not-md:px-[15px] not-md:pt-0 min-h-dvh flex flex-col justify-between`}
       >
-        <GlobalHeader />
-        {children}
+        <div>
+          <GlobalHeader />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
