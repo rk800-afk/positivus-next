@@ -10,7 +10,7 @@ export function SubscribeForm() {
         placeholder='Email'
         type='email'
       />
-      <UiButton className='bg-[var(--primary-green)] md:w-[300px]'>
+      <UiButton className='md:w-[300px]' variant="green">
         Subscribe to news
       </UiButton>
     </div>
