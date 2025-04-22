@@ -9,7 +9,7 @@ export function OurImpactNumber({ className }: { className?: string }) {
         titleText="Our Impact in Numbers"
         titleDescription="A snapshot of the milestones and achievements that drive our succeess"
       ></SectionHeader>
-      <div className="flex w-[100%] mt-[40px]">
+      <div className="flex w-[100%] not-md:flex-col mt-[40px]">
         {impactNumnber.map((value, index) => {
           const isFirst = index == 0;
           const isLast = index == impactNumnber.length - 1;
@@ -20,8 +20,8 @@ export function OurImpactNumber({ className }: { className?: string }) {
                 "border-r-[1px] border-r-black rounded-tr-[15px]": !isLast
               })}></div>
               <div className="px-5">
-                <p className="font-semibold text-[23px]">{value.title}</p>
-                <p className="font-[18px]">{value.description}</p>
+                <p className="font-semibold text-[23px] not-md:text-center">{value.title}</p>
+                <p className="font-[18px]  not-md:text-center">{value.description}</p>
               </div>
             </div>
           );
